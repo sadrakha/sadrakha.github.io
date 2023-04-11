@@ -1,0 +1,71 @@
+$first-color:#2e4dd4;
+$second-color:#2cd9c5;
+$third-color:#826af9;
+$fourth-color:#ffe700;
+$fifth-color:#d7dae6;
+$sixth-color:#9c9c9c;
+$seventh-color:#FE2E09;
+$eighth-color:#505d6f;
+$ninth-color:#28A745;
+$tenth-color:#83CFFF;
+$eleventh-color:#2D99FF;
+
+$iransans-medium:"IRANSans-Medium";
+$iransans-r:"IRANSans-Regular";
+$iransans-ul:"IRANSans-UltraLight";
+
+h1{
+    font-size: 24px;
+    color: $eighth-color;
+}
+a{
+    text-decoration: none;
+}
+table{
+    margin-top: 3rem;
+}
+body{
+    background-color: $fifth-color;
+}
+@mixin draw-progress($progress, $color) {
+    .pie {
+        .half-circle {
+            border-color: $color;
+        }
+
+        .left-side {
+            transform: rotate($progress * 3.6deg);
+        }
+
+        @if $progress <= 50 {
+            .right-side {
+                display: none;
+            }
+        } @else {
+            clip: rect(auto, auto, auto, auto);
+
+            .right-side {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+@mixin size($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+@font-face {
+    font-family: IRANSans-Medium;
+    src: url('../fonts/IRANSans-Medium.ttf');
+}@font-face {
+    font-family: IRANSans-Regular;
+    src: url('../fonts/IRANSans-Regular.ttf');
+}@font-face {
+    font-family: IRANSans-UltraLight;
+    src: url('../fonts/IRANSans-UltraLight.ttf');
+}@font-face {
+    font-family: IRANSans-Medium;
+    src: url('../fonts/IRANSans-Medium.ttf');
+}

@@ -1,0 +1,33 @@
+$first-color:#fff;
+$second-color:#004FC8;
+$third-color:#266eff;
+$fuorth-color:#21385a;
+$fifth-color:#707070;
+$sixth-color:#dceefa;
+$seventh-color:#D8D2CB;
+$ninth-color:#21385a;
+
+$b-nazanin:"BNaznnBd";
+$b-titr:"BTitrBd";
+$b-yekan:"BYekan";
+@font-face {
+    font-family:BNaznnBd;
+    src: url(../Fonts/BNaznnBd.ttf);
+}
+@font-face {
+    font-family:BTitrBd;
+    src: url(../Fonts/BTitrBd.ttf);
+}
+@font-face {
+    font-family:BYekan;
+    src: url(../Fonts/BYekan.ttf);
+}
+*{
+    font-family: $b-yekan ;
+}
+h3{
+    color: $third-color !important;
+}
+h1{
+    color: $fuorth-color;
+}

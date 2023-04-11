@@ -1,0 +1,291 @@
+.content{
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar{
+    padding-right: 1rem;
+    .container{
+        background-color: $first-color;
+        border-radius: 40px;
+        padding: 0;
+        ul{
+                width: 100%;
+                padding: 1rem 0;
+            text-align: center;
+            li{
+                margin: .5rem 0;
+                padding: .25rem 0;
+            }
+            .active{
+                a{
+                    color: $first-color;
+                }
+                border-radius:0 40px 40px 0 ;
+                margin-right: .5rem;
+                width: 100%;
+                background-color: #fff;
+            }
+        }
+    }
+    a{
+        color: #fff;
+
+        font-size: 2.5rem;
+    }
+    .exit{
+        margin-top: 12rem;
+    }
+}
+header{
+    margin-top: 5rem;
+    .date,.profile{
+        background-color: $fifth-color;
+        width: 30rem;
+        padding: 2rem ;
+        border-radius: 25px;
+        font-size: 1.25rem;
+        font-family: $iransans-r;
+
+    }
+    .profile{
+        width: 16rem;
+        font-size: 1rem;
+        padding: 2rem 1rem;
+        height: 4.5rem;
+    }
+
+    .header-bottom{
+        margin-top: 2rem;
+        div{
+            background-color: $first-color;
+            font-size: 1.5rem;
+            text-align: center;
+            color: #fff;
+            font-family: $iransans-medium;
+            padding: 2rem;
+            margin-right: 2rem;
+            border-radius: 25px;
+            height: 9rem;
+        }
+    }
+}
+.section1{
+    font-family: $iransans-r;
+    .section1-right{
+        select{
+            border: none;
+            margin-bottom: 2rem;
+            width: 8rem;
+            height: 3rem;
+            cursor: pointer;
+            &:focus{
+                outline: none;
+            }
+        }
+        .progress-head{
+            color: $sixth-color;
+        }
+        .bar{
+            margin-top: 2rem;
+            
+        }
+        .progress{
+            height: .5rem;
+            justify-content: flex-end;
+        }
+        .first-progress{
+            background-color: $second-color;
+            width: 15rem;
+            border-radius: 25px;
+
+        }
+        .second-progress{
+            border-radius: 25px;
+            width: 30rem;
+            // background: $third-color;
+        }
+        .third-progress{
+            border-radius: 25px;
+            width: 20rem;
+            background: $third-color;
+        }
+        .fourth-progress{
+            border-radius: 25px;
+            width: 10rem;
+            background: $fourth-color;
+        }
+    }
+    .section1-left{
+        position: relative;
+        padding-right: 2rem;
+        .number{
+            position: absolute;
+            top: 11rem;
+            text-align: center;
+        right: 20rem;
+        font-size: 2.5rem;
+        color: $eightth-color;
+        small{
+            font-size: .75rem;
+            color: $sixth-color;
+            display: block;
+        }
+        }
+        .guide{
+            position: absolute;
+            bottom: 0;
+            width: 10rem;
+            font-size: .75rem;
+            p{
+                display: inline-block;
+            }
+            .guide-title{
+                flex-direction: column;
+
+            }
+            .ligtblue{
+    color: $second-color;
+}
+.perple{
+    color: $third-color;
+}
+.blue{
+    color: $first-color;
+}
+        }
+    }
+    .pie-wrapper75 {
+        @include size($d,$d);
+        top: 8rem;
+        right: 17rem;
+        margin: 15px;
+        position: absolute;
+        
+        &:nth-child(3n + 1) {
+          clear: both;
+        }
+        .pie {
+            @include size(100%, 100%);
+            clip: rect(0, $d, $d, $d / 2);
+            left: 0;
+            position: absolute;
+            top: 0;
+        
+            .half-circle {
+              @include size(100%, 100%);
+              border: ($d / 20) solid #3498db;
+              border-radius: 50%;
+              clip: rect(0, $d / 2, $d, 0);
+              left: 0;
+              position: absolute;
+              top: 0;
+            }
+          }
+    }.pie-wrapper55 {
+        @include size($a,$a);
+        top:6.75rem;
+        right: 15.75rem;
+        margin: 15px;
+        position: absolute;
+        
+        &:nth-child(3n + 1) {
+          clear: both;
+        }
+        .pie {
+            @include size(100%, 100%);
+            clip: rect(0, $a, $a, $a / 2);
+            left: 0;
+            position: absolute;
+            top: 0;
+        
+            .half-circle {
+              @include size(100%, 100%);
+              border: ($a / 20) solid #3498db;
+              border-radius: 50%;
+              clip: rect(0, $a / 2, $a, 0);
+              left: 0;
+              position: absolute;
+              top: 0;
+            }
+          }
+    }.pie-wrapper35 {
+        @include size($c,$c);
+        top:5.25rem;
+        right: 14.25rem;
+        margin: 15px;
+        position: absolute;
+        
+        &:nth-child(3n + 1) {
+          clear: both;
+        }
+        .pie {
+            @include size(100%, 100%);
+            clip: rect(0, $c, $c, $c / 2);
+            left: 0;
+            position: absolute;
+            top: 0;
+        
+            .half-circle {
+              @include size(100%, 100%);
+              border: ($c / 20) solid #3498db;
+              border-radius: 50%;
+              clip: rect(0, $c / 2, $c, 0);
+              left: 0;
+              position: absolute;
+              top: 0;
+            }
+          }
+    }
+    .progress-75 {
+        @include draw-progress(55, $second-color);
+      }.progress-55 {
+        @include draw-progress(65, $third-color);
+        @include size(3,3);
+      }.progress-25 {
+        @include draw-progress(75, $first-color);
+      }
+}
+.table{
+    margin-top: 5rem;
+    font-family: $iransans-r;
+    .table-title{
+        margin-bottom: 2.5rem;
+        padding-bottom: 2.5rem;
+        border-bottom: 3px solid $fifth-color;
+        text-align: center;
+    }
+    table{
+        width: 100%;
+        border: 1px solid $sixth-color;
+        padding: 1rem;
+        height: 5rem;
+        font-size: .65rem;
+        thead{
+            background-color: $fifth-color;
+            opacity: .8;
+        }
+        td,th{
+            border: 1px solid $sixth-color;
+            margin: 1rem;
+
+            // border-radius: 25px;
+            padding: .5rem;
+
+            i{
+                color: $sixth-color;
+                margin-left: .25rem;
+            }
+
+        }
+    }
+}
+footer{
+    height: 2rem;
+    margin-top: 5rem;
+    padding-top: .25rem;
+    background-color: $first-color;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    font-family: $iransans-medium;
+}

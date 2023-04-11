@@ -1,0 +1,61 @@
+@font-face {
+  font-family: BNaznnBd;
+  src: url(../Fonts/BNaznnBd.ttf);
+}
+@font-face {
+  font-family: BTitrBd;
+  src: url(../Fonts/BTitrBd.ttf);
+}
+@font-face {
+  font-family: BYekan;
+  src: url(../Fonts/BYekan.ttf);
+}
+* {
+  font-family: "BYekan";
+}
+
+h3 {
+  color: hsl(220deg, 100%, 57%) !important;
+}
+
+h1 {
+  color: #21385a;
+}
+
+@media (max-width: 767px) {
+  .container {
+    height: 38rem !important;
+  }
+  a:hover {
+    box-shadow: none !important;
+  }
+}
+body {
+  background: #dceefa;
+}
+
+.container {
+  height: 35rem;
+  margin: 6% auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 2px solid #21385a !important;
+  border-radius: 25px;
+  background-color: #fff;
+  padding: 0;
+  transition: all 0.4s;
+}
+.container a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #21385a;
+  border-radius: 25px;
+  height: 60%;
+}
+.container a:hover {
+  box-shadow: 0px 0px 30px 0px #21385a;
+}
+.container a img {
+  width: 14rem;
+}/*# sourceMappingURL=first-page.css.map */
